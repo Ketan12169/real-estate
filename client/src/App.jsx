@@ -1,7 +1,7 @@
 import HomePage from "./routes/homePage/homePage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ListPage from "./routes/listPage/listPage";
-import { Layout, RequireAuth } from "./routes/layout/layout";
+import { Layout, RequireAuth } from "./routes/layout/layout"; // Use named imports
 import SinglePage from "./routes/singlePage/singlePage";
 import ProfilePage from "./routes/profilePage/profilePage";
 import Login from "./routes/login/login";
@@ -34,7 +34,6 @@ function App() {
           element: <SinglePage />,
           loader: singlePageLoader,
         },
-
         {
           path: "/login",
           element: <Login />,
