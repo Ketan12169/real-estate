@@ -8,7 +8,9 @@ import userRoute from "./routes/user.route.js";
 
 const app = express();
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(
+  cors({ origin: "https://real-estate-homes.vercel.app/", credentials: true })
+);
 // app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
 console.log(process.env.CLIENT_URL);
 
